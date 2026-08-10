@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+
+import subprocess
+import sys
+import os
+
+s,output=subprocess.getstatusoutput('git status -s')
+split=output.split('\n')
+cmds=[]
+for line in split:
+  tokens = line.split(' ')
+  tokens = list(filter(None, tokens))
+  if len(tokens) > 1:
+    if "->" in tokens and len(tokens) > 3:
+      print(tokens[3])
+      cmds.append("git add " + tokens[3])
+    elif tokens[0] == 'M' or tokens[0] == 'A' or tokens[0] == "AM":
+      print(tokens[1])
+      cmds.append("git add " + tokens[1])
+    elif tokens[0] == 'D':
+      print(tokens[1])
+      cmds.append("git rm " + tokens[1])
+
+if len(cmds) > 0 and len(sys.argv) > 1 and ("-a" == sys.argv[1]):
+  for cmd in cmds:
+    os.system(cmd)
+
+if len(cmds) > 0 and len(sys.argv) > 1 and ("-c" == sys.argv[1]):
+  for cmd in cmds:
+    os.system(cmd)
+  os.system("git commit")
+
+
+if len(cmds) > 0 and len(sys.argv) > 2 and ("c" == sys.argv[1] or "-c" == sys.argv[1]):
+  for cmd in cmds:
+    os.system(cmd)
+
+  comment = ""
+  for comment_part in sys.argv[2:]:
+    comment += comment_part + " "
+
+  cmd = "git commit -m \"" + comment.strip() +  "\""
+  print(cmd)
+  os.system(cmd);

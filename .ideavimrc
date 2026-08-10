@@ -1,0 +1,34 @@
+
+map gl $
+map gh ^
+map gk [{
+map gj ]}
+
+
+" Make it so x does not put the deleted char in the default buffer overwriting
+" what you previously yanked
+noremap x "_x
+
+let mapleader=" "
+let localmapleader=" "
+
+set incsearch
+set ic
+set hlsearch
+set number
+set smartcase
+set scrolloff=10
+set cursorline
+
+noremap v V
+noremap V v
+
+map SH g;
+map SL g,
+
+noremap ; :
+
+map <C-k> <C-w><w>
+
+nnoremap <localleader>f :action GotoFile<CR>
+nnoremap <leader>f :action GotoFile<CR>

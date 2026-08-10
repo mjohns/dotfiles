@@ -1,0 +1,15 @@
+theme = solarized-light
+font-family = "JetBrains Mono Nerd Font"
+#window-decoration = none
+title = "GhosttyTerminal"
+shell-integration-features = no-title
+
+# disable ligatures
+font-feature = -calt
+font-feature = -liga
+
+app-notifications = no-clipboard-copy
+
+cursor-style = block
+clipboard-read = allow
+clipboard-write = allow
