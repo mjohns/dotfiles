@@ -1,0 +1,7 @@
+Make command and help windows better in general
+https://github.com/folke/noice.nvim
+
+ "folke/trouble.nvim",
+ "folke/snacks.nvim",
+
+ jj diff editing hunk.nvim

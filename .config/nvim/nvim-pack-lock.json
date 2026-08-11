@@ -1,0 +1,41 @@
+{
+  "plugins": {
+    "jj-diffconflicts": {
+      "rev": "a2aa9a247b56d2c1a6f6be81bcf41c5450cc82ff",
+      "src": "https://github.com/rafikdraoui/jj-diffconflicts"
+    },
+    "leap.nvim": {
+      "rev": "52bc56ba61b1f54f123e29d6df7d1b7a0393eeac",
+      "src": "https://codeberg.org/andyg/leap.nvim"
+    },
+    "mini.nvim": {
+      "rev": "1345d191bb3da9c7b0e977f4387c5761f9bff68d",
+      "src": "https://github.com/nvim-mini/mini.nvim",
+      "version": "'stable'"
+    },
+    "nvim": {
+      "rev": "79e2049a0fdf7ec840f8463fe1d962c94493196b",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "nvim-solarized-lua": {
+      "rev": "d69a263c97cbc765ca442d682b3283aefd61d4ac",
+      "src": "https://github.com/mjohns/nvim-solarized-lua"
+    },
+    "nvim-web-devicons": {
+      "rev": "2ae6958df7ced50baac5035cec0c15799eedfbf7",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "tiny-cmdline.nvim": {
+      "rev": "e247d9ee4c980734f8f8bf616d31e0ab7c27485d",
+      "src": "https://github.com/rachartier/tiny-cmdline.nvim"
+    },
+    "vim-abolish": {
+      "rev": "dcbfe065297d31823561ba787f51056c147aa682",
+      "src": "https://github.com/tpope/vim-abolish"
+    },
+    "vim-sensible": {
+      "rev": "0ce2d843d6f588bb0c8c7eec6449171615dc56d9",
+      "src": "https://github.com/tpope/vim-sensible"
+    }
+  }
+}
