@@ -1,4 +1,3 @@
-
 map gl $
 map gh ^
 map gk [{
@@ -10,7 +9,7 @@ map gj ]}
 noremap x "_x
 
 let mapleader=" "
-let localmapleader=" "
+let localmapleader=","
 
 set incsearch
 set ic

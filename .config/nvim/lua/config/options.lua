@@ -128,3 +128,24 @@ vim.o.wildignorecase = true
 -- cnoremap <expr> <Up> wildmenumode() ? "\<C-p>" : "\<Up>"
 -- cnoremap <expr> <Down> wildmenumode() ? "\<C-n>" : "\<Down>"
 -- ]])
+--
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "gitcommit",
+--   callback = function()
+--     vim.opt_local.textwidth = 0          -- Removes the hard wrap limit
+--     vim.opt_local.colorcolumn = ""       -- Clears any visual length columns
+--     vim.opt_local.formatoptions:remove({"t", "l"}) -- Stops auto-wrapping text
+--   end,
+-- })
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "gitcommit", "jjdescription", "jj" },
+  callback = function()
+    -- Disable hard wrapping
+    vim.opt_local.textwidth = 0
+    vim.opt_local.formatoptions:remove({ "t", "a" })
+
+    -- Disable visual soft wrapping (optional, remove if you want visual wrapping)
+    vim.opt_local.wrap = false
+  end,
+})
+

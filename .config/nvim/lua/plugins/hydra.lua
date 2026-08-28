@@ -47,17 +47,17 @@ local function configure_hydras()
     })
   end
 
-  bracket_hydra("diagnostics", "<leader>dd", "d", "D")
-  bracket_hydra("quickfix", "<leader>dq", "q", "Q")
-  bracket_hydra("files", "<leader>df", "f", "F")
-  bracket_hydra("oldfiles", "<leader>do", "o", "O")
-  bracket_hydra("buffers", "<leader>db", "b", "B")
-  bracket_hydra("methods", "<leader>dm", "m", "M")
-  bracket_hydra("treesitter", "<leader>dt", "t", "T")
-  bracket_hydra("undo", "<leader>du", "u", "U")
-  bracket_hydra("conflicts", "<leader>dx", "x", "X")
-  bracket_hydra("yank", "<leader>dy", "y", "Y")
-  bracket_hydra("hunks", "<leader>dh", "h", "H")
+  -- bracket_hydra("diagnostics", "<leader>dd", "d", "D")
+  -- bracket_hydra("quickfix", "<leader>dq", "q", "Q")
+  -- bracket_hydra("files", "<leader>df", "f", "F")
+  -- bracket_hydra("oldfiles", "<leader>do", "o", "O")
+  -- bracket_hydra("buffers", "<leader>db", "b", "B")
+  -- bracket_hydra("methods", "<leader>dm", "m", "M")
+  -- bracket_hydra("treesitter", "<leader>dt", "t", "T")
+  -- bracket_hydra("undo", "<leader>du", "u", "U")
+  -- bracket_hydra("conflicts", "<leader>dx", "x", "X")
+  -- bracket_hydra("yank", "<leader>dy", "y", "Y")
+  -- bracket_hydra("hunks", "<leader>dh", "h", "H")
 
 end
 
