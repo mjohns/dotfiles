@@ -209,3 +209,5 @@ end, { expr = true, replace_keycodes = true })
 vim.keymap.set("c", "<Up>", function()
   return vim.fn.wildmenumode() == 1 and "<Left>" or "<Up>"
 end, { expr = true, replace_keycodes = true })
+
+require("config.navigation").setup()

@@ -67,15 +67,15 @@ local function preview_filter()
 end
 
 return {
-  {
-    "https://codeberg.org/andyg/leap.nvim",
-    config = function()
-      -- vim.keymap.set('n', '<leader>s', '<Plug>(leap)')
-      -- vim.keymap.set('n', '<leader><leader>', '<Plug>(leap-from-window)')
-      -- vim.keymap.set({'n', 'x', 'o'}, '<leader><leader>', '<Plug>(leap)')
-      vim.keymap.set({'n', 'x', 'o'}, 'f', '<Plug>(leap)')
-      -- clever_f()
-      preview_filter()
-    end,
-  },
+  -- {
+  --   "https://codeberg.org/andyg/leap.nvim",
+  --   config = function()
+  --     -- vim.keymap.set('n', '<leader>s', '<Plug>(leap)')
+  --     -- vim.keymap.set('n', '<leader><leader>', '<Plug>(leap-from-window)')
+  --     -- vim.keymap.set({'n', 'x', 'o'}, '<leader><leader>', '<Plug>(leap)')
+  --     vim.keymap.set({'n', 'x', 'o'}, 'f', '<Plug>(leap)')
+  --     -- clever_f()
+  --     preview_filter()
+  --   end,
+  -- },
 }
